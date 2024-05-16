@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+:root {
+	--purple: #7c379b;
+	--orange: #e95229;
+	--green: #96c22b;
+	--blue: #00a0e3;
+	--white: #ffffff;
+	--light-gray: #f3f4f6;
+	--dark-gray: #374151;
+
+	--border-radius: 10px;
+
+	--default-font: 18px;
+	--large-font: 24px;
+
+	--font-weight-regular: 400;
+	--font-weight-medium: 500;
+	--font-weight-bold: 700;
+
+	--button-padding-horizontal: 30px;
+	--button-padding-vertical: 15px;
+
+	--pointer-opacity: 0.8;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: var(--border-radius);
+	border: none;
+
+	color: var(--white);
+	font-size: var(--large-font);
+	font-weight: var(--font-weight-bold);
+
+	background-color: var(--green);
+
+	padding: var(--button-padding-vertical) var(--button-padding-horizontal);
+
+	transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+
+	&--confirm {
+		cursor: pointer;
+
+		&:hover {
+			opacity: var(--pointer-opacity);
+		}
+	}
+
+	&--change {
+		border: 2px solid var(--white);
+		background-color: transparent;
+
+		&:hover {
+			background-color: #ffffff;
+			color: var(--orange);
+		}
+	}
+}
+

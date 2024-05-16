@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SSUGT AI Portal</title>
+		<!-- Styles -->
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/common.css" />
+		<link rel="stylesheet" href="./css/login.css" />
+
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png" />
+		<link rel="manifest" href="./favicon_io/site.webmanifest" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="login">
+				<div class="login__left">
+					<form class="login__form" action="">
+						<img src="./img/logo/logo.png" alt="" />
+						<div class="login__input">
+							<label class="label" for="username">Имя пользователя</label>
+							<input class="input" type="text" id="username" name="username" required />
+						</div>
+						<div class="login__input">
+							<label class="label" for="password">Пароль</label>
+							<input class="input" type="password" id="password" name="password" required />
+						</div>
+						<button class="forgot-password">Забыли пароль?</button>
+						<!-- Пока нет бэкенда для авторизации просто используем ссылку для перехода на основную страницу -->
+						<a class="button button--confirm" href="">Вход</a>
+						<!-- <input class="button login__button button--confirm" type="submit" value="Вход" /> -->
+					</form>
+				</div>
+				<div class="login__right">
+					<h1 class="login__header">Привлекательный заголовок</h1>
+					<p class="login__text">
+						Интересный текст, рассказывающий о сайте, его возможностях и преимуществах
+					</p>
+					<button class="button button--change">Регистрация</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

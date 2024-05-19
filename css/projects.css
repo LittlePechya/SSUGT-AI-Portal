@@ -1,32 +1,65 @@
-.container {
-  margin: 0 40px;
+@charset "UTF-8";
+.main {
   height: 100%;
+  padding-top: 150px; /* Высота вашего header */
 }
-
-.nav {
+.main__container {
+  height: 100%;
+  margin: 0 65px;
+}
+.main__header {
+  color: var(--dark-gray);
+  text-transform: uppercase;
+  font-size: 48px;
+}
+.main__header-row {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  margin-bottom: 50px;
 }
-.nav__left {
+.main__content {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.nav__element {
-  display: inline;
-  margin-left: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.header {
-  margin: 0;
-  position: fixed;
-  width: 100%;
-  height: 100px;
-  background-color: beige;
+.create-project-button {
+  font-weight: var(--font-weight-bold);
+  font-size: 24px;
+  text-transform: uppercase;
 }
-.header__logo {
-  width: 165px;
-  height: 50px;
+
+.content-card {
+  width: 640px;
+  height: 200px;
+  border-radius: var(--border-radius);
+  border: 3px solid var(--light-gray);
+  margin-bottom: 40px;
+  color: var(--dark-gray);
+}
+.content-card:hover {
+  opacity: var(--hover-opacity);
+}
+.content-card__inner {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px 20px 20px;
+}
+.content-card__image {
+  width: 175px;
+  height: 100%;
+  border-radius: var(--border-radius);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.content-card__description {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 15px;
 }/*# sourceMappingURL=projects.css.map */

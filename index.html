@@ -8,7 +8,6 @@
 		<link rel="stylesheet" href="./css/reset.css" />
 		<link rel="stylesheet" href="./css/common.css" />
 		<link rel="stylesheet" href="./css/login.css" />
-		<link rel="stylesheet" href="./css/">
 
 		<!-- Favicon -->
 		<link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png" />
@@ -18,32 +17,71 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="login">
-				<div class="login__left">
-					<form class="login__form" action="">
-						<img src="./img/logo/logo.png" alt="" />
-						<div class="login__input">
-							<label class="label" for="username">Имя пользователя</label>
-							<input class="input" type="text" id="username" name="username" required />
-						</div>
-						<div class="login__input">
-							<label class="label" for="password">Пароль</label>
-							<input class="input" type="password" id="password" name="password" required />
-						</div>
-						<button class="forgot-password">Забыли пароль?</button>
-						<!-- Пока нет бэкенда для авторизации просто используем ссылку для перехода на основную страницу -->
-						<a class="button button--confirm" href="./html/projects.html">Вход</a>
-						<!-- <input class="button login__button button--confirm" type="submit" value="Вход" /> -->
-					</form>
+			<div class="carousel">
+				<div class="login">
+					<div class="login__form-part">
+						<form class="login__form" action="">
+							<img src="./img/logo/logo.png" alt="" />
+							<div class="login__input">
+								<label class="label" for="username">Имя пользователя</label>
+								<input class="input" type="text" id="username" name="username" required />
+							</div>
+							<div class="login__input">
+								<label class="label" for="password">Пароль</label>
+								<input class="input" type="password" id="password" name="password" required />
+							</div>
+							<button class="forgot-password">Забыли пароль?</button>
+							<a class="button button--confirm" href="./html/projects.html">Вход</a>
+						</form>
+					</div>
+					<div class="login__color-part color-part--orange">
+						<h1 class="login__header">Привлекательный заголовок</h1>
+						<p class="login__text">
+							Интересный текст, рассказывающий о сайте, его возможностях и преимуществах
+						</p>
+						<button class="button button--register" id="registerButton">Регистрация</button>
+					</div>
 				</div>
-				<div class="login__right">
-					<h1 class="login__header">Привлекательный заголовок</h1>
-					<p class="login__text">
-						Интересный текст, рассказывающий о сайте, его возможностях и преимуществах
-					</p>
-					<button class="button button--change">Регистрация</button>
+
+				<div class="login">
+					<div class="login__color-part color-part--blue">
+						<h1 class="login__header">Уже зарегистрированы?</h1>
+						<p class="login__text">
+							Интересный текст, рассказывающий о сайте, его возможностях и преимуществах
+						</p>
+						<button class="button button--authorize" id="loginButton">Авторизация</button>
+					</div>
+					<div class="login__form-part">
+						<form class="login__form" action="">
+							<img src="./img/logo/logo.png" alt="" />
+							<div class="login__input">
+								<label class="label" for="username-register">Имя пользователя</label>
+								<input
+									class="input"
+									type="text"
+									id="username-register"
+									name="username-register"
+									required />
+							</div>
+							<div class="login__input">
+								<label class="label" for="email">Электронная почта</label>
+								<input class="input" type="email" id="email" name="email" required />
+							</div>
+							<div class="login__input">
+								<label class="label" for="password-register">Пароль</label>
+								<input
+									class="input"
+									type="password"
+									id="password-register"
+									name="password-register"
+									required />
+							</div>
+							<a class="button button--confirm" href="./html/projects.html">Регистрация</a>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
+		<script src="./js/login.js"></script>
 	</body>
 </html>

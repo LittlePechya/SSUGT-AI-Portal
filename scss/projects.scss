@@ -1,35 +1,74 @@
-.container {
-	margin: 0 40px;
+.main {
 	height: 100%;
-}
+	padding-top: 150px; /* Высота вашего header */
 
-.nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 100%;
+	&__container {
+		height: 100%;
+		margin: 0 65px;
+	}
 
-	&__left {
+	&__header {
+		color: var(--dark-gray);
+		text-transform: uppercase;
+		font-size: 48px;
+	}
+
+	&__header-row {
+		width: 100%;
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
+		margin-bottom: 50px;
 	}
 
-	&__element {
-		display: inline;
-		margin-left: 40px;
+	&__content {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 }
 
-.header {
-	margin: 0;
-	position: fixed;
-	width: 100%;
-	height: 100px;
-	background-color: beige;
+.create-project-button {
+	font-weight: var(--font-weight-bold);
+	font-size: 24px;
+	text-transform: uppercase;
+}
 
-	&__logo {
-		width: 165px;
-		height: 50px;
+.content-card {
+	width: 640px;
+	height: 200px;
+
+	border-radius: var(--border-radius);
+	border: 3px solid var(--light-gray);
+
+	margin-bottom: 40px;
+
+	color: var(--dark-gray);
+
+	&:hover {
+		opacity: var(--hover-opacity);
+	}
+
+	&__inner {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 100px 20px 20px;
+	}
+
+	&__image {
+		width: 175px;
+		height: 100%;
+		border-radius: var(--border-radius);
+		object-fit: cover;
+	}
+
+	&__description {
+		display: flex;
+		height: 100%;
+		flex-direction: column;
+		gap: 15px;
 	}
 }

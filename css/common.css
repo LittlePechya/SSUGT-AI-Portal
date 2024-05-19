@@ -18,6 +18,14 @@
   --pointer-opacity: 0.8;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+}
+
 .button {
   display: flex;
   justify-content: center;
@@ -44,4 +52,10 @@
 .button--change:hover {
   background-color: #ffffff;
   color: var(--orange);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }/*# sourceMappingURL=common.css.map */

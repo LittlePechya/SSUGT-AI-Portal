@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SSUGT AI Portal</title>
+		<!-- Styles -->
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/header.css" />
+		<link rel="stylesheet" href="../css/project-page.css" />
+
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png" />
+		<link rel="manifest" href="../favicon_io/site.webmanifest" />
+
+		<!-- Font awesome-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__container">
+				<nav class="nav">
+					<div class="nav__left">
+						<a class="logo header__logo" href="./projects.html"
+							><img src="../img/logo/logo.png" alt="Логотип"
+						/></a>
+						<ul>
+							<li class="nav__element text-hover">
+								<a class="nav__link" href="./projects.html">Проекты</a>
+							</li>
+							<li class="nav__element text-hover"><a class="nav__link" href="#">Руководство</a></li>
+						</ul>
+					</div>
+					<div class="nav__right">
+						<button class="icon-button text-hover">
+							<i class="nav__bell-icon fa-solid fa-bell"></i>
+						</button>
+						<button class="icon-button text-hover" id="userButton">
+							Имя пользователя <i class="nav__chevron-icon fa-solid fa-chevron-down"></i>
+						</button>
+						<div class="user-menu" id="userMenu">
+							<button class="user-menu__item">Настройки</button>
+							<button class="user-menu__item">
+								<a class="user-menu__link" href="../index.html">Выйти</a>
+							</button>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="sidebar">
+				<div class="sidebar__container">
+					<img src="../img/projects/oranges.jpg" alt="" class="sidebar__img" />
+					<div class="sidebar__title-row">
+						<h3 class="sidebar__title">Определитель апельсинов</h3>
+						<i class="sidebar__info fas fa-ellipsis-v"></i>
+					</div>
+					<p class="sidebar__description">Распознавание объектов</p>
+					<hr class="sidebar__hr" />
+					<div class="sidebar__element">
+						<button class="sidebar__button sidebar__button--active">
+							<i class="fas fa-bars"></i>
+						</button>
+						<p class="sidebar__button-name sidebar__button-name--active">Классы</p>
+					</div>
+
+					<div class="sidebar__element">
+						<button class="sidebar__button">
+							<i class="fas fa-arrow-up"></i>
+						</button>
+						<p class="sidebar__button-name">Загрузка данных</p>
+					</div>
+
+					<div class="sidebar__element">
+						<button class="sidebar__button">
+							<i class="fas fa-users"></i>
+						</button>
+						<p class="sidebar__button-name">Команда</p>
+					</div>
+
+					<div class="sidebar__element">
+						<button class="sidebar__button">
+							<i class="fas fa-image"></i>
+						</button>
+						<p class="sidebar__button-name">Команда</p>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

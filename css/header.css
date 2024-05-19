@@ -38,6 +38,12 @@
   color: var(--dark-gray);
   font-weight: var(--font-weight-semi-bold);
 }
+.nav__link--active {
+  color: var(--purple);
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: 5px;
+}
 .nav__chevron-icon {
   margin-left: 10px;
 }

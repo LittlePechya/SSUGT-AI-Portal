@@ -43,6 +43,13 @@
 	&__link {
 		color: var(--dark-gray);
 		font-weight: var(--font-weight-semi-bold);
+
+		&--active {
+			color: var(--purple);
+			background-color: var(--white);
+			border-radius: var(--border-radius);
+			padding: 5px;
+		}
 	}
 
 	&__chevron-icon {

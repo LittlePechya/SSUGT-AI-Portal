@@ -7,6 +7,7 @@
   --white: #ffffff;
   --light-gray: #f3f4f6;
   --dark-gray: #374151;
+  --red: #ff4747;
   --border-radius: 10px;
   --default-font: 18px;
   --large-font: 24px;
@@ -61,6 +62,14 @@ body {
 .button--authorize:hover {
   background-color: #ffffff;
   color: var(--blue);
+}
+.button--cancel {
+  color: var(--dark-gray);
+  border: 2px solid var(--light-gray);
+  background: var(--white);
+}
+.button--cancel:hover {
+  opacity: var(--hover-opacity);
 }
 
 ul {

@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="../css/common.css" />
 		<link rel="stylesheet" href="../css/header.css" />
 		<link rel="stylesheet" href="../css/projects.css" />
+		<link rel="stylesheet" href="../css/add-project-modal.css" />
 
 		<!-- Favicon -->
 		<link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png" />
@@ -58,7 +59,7 @@
 			<div class="main__container">
 				<div class="main__header-row">
 					<h1 class="main__header">Список ваших проектов</h1>
-					<button class="button button--confirm create-project-button">
+					<button class="button button--confirm create-project-button" id="addNewProject">
 						+ Создать новый проект
 					</button>
 				</div>
@@ -112,6 +113,54 @@
 				</div>
 			</div>
 		</main>
+
+		<div class="modal" id="createProjectModal">
+			<div class="modal__content">
+				<h2 class="modal__header">Создание проекта</h2>
+				<div class="modal__name-info">
+					<label class="modal__label" for="projectName">Название</label>
+					<p class="modal__name-hint modal__name-hint--warning">
+						Название проекта не может быть пустым
+					</p>
+				</div>
+				<input
+					class="modal__input"
+					type="text"
+					id="projectName"
+					name="projectName"
+					required
+					placeholder="Например, &quotПороды собак&quot или &quotМодели автомобилей&quot" />
+				<div class="modal__name-info">
+					<label class="modal__label" for="projectMembers">Участники</label>
+					<p class="modal__name-hint">Укажите логины участников через запятую</p>
+				</div>
+				<input
+					class="modal__input"
+					type="text"
+					id="projectMembers"
+					name="projectMembers"
+					required
+					placeholder="vaberof, littlepechya" />
+				<div class="modal__image-row">
+					<label for="projectImage" class="add-file-button">
+						<i class="add-file-button__icon fas fa-file"></i>Выберите титульное изображение</label
+					>
+					<input
+						class="modal__image-input"
+						type="file"
+						id="projectImage"
+						name="projectImage"
+						accept="image/*" />
+					<div class="modal__preview" id="imagePreview"></div>
+				</div>
+				<div class="modal__buttons-row">
+					<button class="button button--confirm" id="createProjectSubmit">Создать проект</button>
+					<button class="button button--cancel" id="cancelButton">Отмена</button>
+				</div>
+			</div>
+		</div>
+
 		<script src="../js/userMenu.js"></script>
+		<script src="../js/modalNewProject.js"></script>
 	</body>
 </html>

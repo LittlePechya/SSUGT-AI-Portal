@@ -8,6 +8,7 @@
 	--white: #ffffff;
 	--light-gray: #f3f4f6;
 	--dark-gray: #374151;
+	--red: #ff4747;
 
 	--border-radius: 10px;
 
@@ -76,6 +77,16 @@ body {
 		&:hover {
 			background-color: #ffffff;
 			color: var(--blue);
+		}
+	}
+
+	&--cancel {
+		color: var(--dark-gray);
+		border: 2px solid var(--light-gray);
+		background: var(--white);
+
+		&:hover {
+			opacity: var(--hover-opacity);
 		}
 	}
 }
